@@ -1,5 +1,5 @@
 import React from 'react'
-import ProfileImg from '../../assets/images/profileimg.jpg'
+import ProfileImg from '../../../assets/images/profileimg.jpg'
 function Header(props) {
 
     return (
