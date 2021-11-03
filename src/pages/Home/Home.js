@@ -1,4 +1,6 @@
 import React from 'react'
+import Chart from '../../components/Chart/Chart'
+import StatsCard from '../../components/StatsCard/StatsCard'
 import './Home.css'
 
 function Home(props) {
@@ -32,36 +34,20 @@ function Home(props) {
                                 <div className="col-xl-6 pr-xl-2">
                                     <div className="row">
                                         <div className="col-sm-6 pr-sm-2 statistics-grid">
-                                            <div className="card card_border border-primary-top p-4">
-                                                <i className="lnr lnr-users"> </i>
-                                                <h3 className="text-primary number">29.75 M</h3>
-                                                <p className="stat-text">Total Users</p>
-                                            </div>
+                                            <StatsCard icon="lnr-users" number="29.75 M" text="Total Users" color="primary"/>
                                         </div>
                                         <div className="col-sm-6 pl-sm-2 statistics-grid">
-                                            <div className="card card_border border-primary-top p-4">
-                                                <i className="lnr lnr-eye"> </i>
-                                                <h3 className="text-secondary number">51.25 K</h3>
-                                                <p className="stat-text">Daily Visitors</p>
-                                            </div>
+                                        <StatsCard icon="lnr-eye" number="51.25 K" text="Daily Visitors" color="secondary"/>
                                         </div>
                                     </div>
                                 </div>
                                 <div className="col-xl-6 pl-xl-2">
                                     <div className="row">
                                         <div className="col-sm-6 pr-sm-2 statistics-grid">
-                                            <div className="card card_border border-primary-top p-4">
-                                                <i className="lnr lnr-cloud-download"> </i>
-                                                <h3 className="text-success number">166.89 M</h3>
-                                                <p className="stat-text">Downloads</p>
-                                            </div>
+                                        <StatsCard icon="lnr-cloud-download" number="166.89 M" text="Downloads" color="success"/>
                                         </div>
                                         <div className="col-sm-6 pl-sm-2 statistics-grid">
-                                            <div className="card card_border border-primary-top p-4">
-                                                <i className="lnr lnr-cart"> </i>
-                                                <h3 className="text-danger number">1,250k</h3>
-                                                <p className="stat-text">Purchased</p>
-                                            </div>
+                                        <StatsCard icon="lnr-cart" number="1,250K" text="Purchased" color="danger"/>
                                         </div>
                                     </div>
                                 </div>
@@ -72,40 +58,8 @@ function Home(props) {
   <!-- charts --> */}
                         <div className="chart">
                             <div className="row">
-                                <div className="col-lg-6 pr-lg-2 chart-grid">
-                                    <div className="card text-center card_border">
-                                        <div className="card-header chart-grid__header">
-                                            Bar Chart
-                                        </div>
-                                        <div className="card-body">
-                                            {/* <!-- bar chart --> */}
-                                            <div id="container">
-                                                <canvas id="barchart"></canvas>
-                                            </div>
-                                            {/* <!-- //bar chart --> */}
-                                        </div>
-                                        <div className="card-footer text-muted chart-grid__footer">
-                                            Updated 2 hours ago
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="col-lg-6 pl-lg-2 chart-grid">
-                                    <div className="card text-center card_border">
-                                        <div className="card-header chart-grid__header">
-                                            Line Chart
-                                        </div>
-                                        <div className="card-body">
-                                            {/* <!-- line chart --> */}
-                                            <div id="container">
-                                                <canvas id="linechart"></canvas>
-                                            </div>
-                                            {/* <!-- //line chart --> */}
-                                        </div>
-                                        <div className="card-footer text-muted chart-grid__footer">
-                                            Updated just now
-                                        </div>
-                                    </div>
-                                </div>
+                                <Chart name="Bar Chart" id="barchart" lastUpdate="2 hours ago"/>
+                                <Chart name="Line Chart" id="linechart" lastUpdate="just now"/>
                             </div>
                         </div>
                         {/* <!-- //charts --> */}
