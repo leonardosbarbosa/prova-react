@@ -2,7 +2,7 @@ import React from 'react'
 import './Blocks.css'
 
 import Template1Img from '../../assets/images/template1.jpg'
- import Template2Img from '../../assets/images/template2.jpg'
+import Template2Img from '../../assets/images/template2.jpg'
 import BlockFeature from '../../components/BlockFeature/BlockFeature'
 import ContentBlock from '../../components/ContentBlock/ContentBlock'
 
@@ -83,13 +83,13 @@ function Blocks(props) {
                                 <h3 className="block__title mb-lg-4">Content Block Features</h3>
                                 <div className="row feature-3 text-center">
                                     <ContentBlock>
-                                    <BlockFeature icon="fa-laptop" title="Web Design" />
+                                        <BlockFeature icon="fa-laptop" title="Web Design" />
                                     </ContentBlock>
                                     <ContentBlock>
-                                    <BlockFeature icon="fa-paint-brush" title="Graphic Design" />
+                                        <BlockFeature icon="fa-paint-brush" title="Graphic Design" />
                                     </ContentBlock>
                                     <ContentBlock>
-                                    <BlockFeature icon="fa-signal" title="Web Development" />
+                                        <BlockFeature icon="fa-signal" title="Web Development" />
                                     </ContentBlock>
                                 </div>
                             </div>
@@ -103,26 +103,18 @@ function Blocks(props) {
                                 <div className="row cwp23-content">
                                     <div className="col-md-6 cwp23-text">
                                         <div className="row cwp23-text-cols">
-                                            <div className="col-md-6 column mt-4">
-                                                <span className="fa fa-laptop icon-fea" aria-hidden="true"></span>
-                                                <a href="#url">Web design</a>
-                                                <p>Type your text here... Lorem ipsum dolor sit amet. </p>
-                                            </div>
-                                            <div className="col-md-6 column mt-4">
-                                                <span className="fa fa-paint-brush icon-fea" aria-hidden="true"></span>
-                                                <a href="#url">Graphic design</a>
-                                                <p>Type your text here... Lorem ipsum dolor sit amet. </p>
-                                            </div>
-                                            <div className="col-md-6 column mt-4">
-                                                <span className="fa fa-signal icon-fea" aria-hidden="true"></span>
-                                                <a href="#url">Web development</a>
-                                                <p>Type your text here... Lorem ipsum dolor sit amet. </p>
-                                            </div>
-                                            <div className="col-md-6 column mt-4">
-                                                <span className="fa fa-laptop icon-fea" aria-hidden="true"></span>
-                                                <a href="#url">Webdesign</a>
-                                                <p>Type your text here... Lorem ipsum dolor sit amet. </p>
-                                            </div>
+                                            <ContentBlock photo={true}>
+                                                <BlockFeature icon="fa-laptop" title="Web Design" photo={true} />
+                                            </ContentBlock>
+                                            <ContentBlock photo={true}>
+                                                <BlockFeature icon="fa-paint-brush" title="Graphic Design" photo={true} />
+                                            </ContentBlock>
+                                            <ContentBlock photo={true}>
+                                                <BlockFeature icon="fa-signal" title="Web development" photo={true} />
+                                            </ContentBlock>
+                                            <ContentBlock photo={true}>
+                                                <BlockFeature icon="fa-laptop" title="Web Design" photo={true} />
+                                            </ContentBlock>
                                         </div>
                                     </div>
                                     <div className="col-md-6 mt-md-0 mt-5 cwp23-img">

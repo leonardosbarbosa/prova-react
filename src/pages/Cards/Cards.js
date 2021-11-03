@@ -5,6 +5,7 @@ import Template2Img from '../../assets/images/template2.jpg'
 import DashboardImg from '../../assets/images/dashboard.jpg'
 import DeskImg from '../../assets/images/desk.jpg'
 import Gridcard from '../../components/GridCard/Gridcard'
+import Breadcrumb from '../../components/Breadcrumb/Breadcrumb'
 
 function Cards(props) {
 
@@ -15,13 +16,14 @@ function Cards(props) {
                     {/* <!-- content --> */}
                     <div className="container-fluid content-top-gap">
                         {/* <!-- breadcrumbs --> */}
-                        <nav aria-label="breadcrumb" className="mb-4">
+                        <Breadcrumb items={["Home", "Elements", "Cards"]}/>
+                        {/* <nav aria-label="breadcrumb" className="mb-4">
                             <ol className="breadcrumb my-breadcrumb">
                                 <li className="breadcrumb-item"><a href="index.html">Home</a></li>
                                 <li className="breadcrumb-item"><a href="#">Elements</a></li>
                                 <li className="breadcrumb-item active" aria-current="page">Cards</li>
                             </ol>
-                        </nav>
+                        </nav> */}
                         {/* <!-- //breadcrumbs -->
         <!-- cards --> */}
                         <section className="template-cards">
