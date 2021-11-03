@@ -2,6 +2,7 @@ import React from 'react'
 import Input from '../../components/micro/Input/Input'
 import Select from '../../components/micro/Select/Select'
 import './Forms.css'
+import Breadcrumb from '../../components/Breadcrumb/Breadcrumb'
 
 function Forms(props) {
 
@@ -11,13 +12,8 @@ function Forms(props) {
                 <div class="main-content">
 
                     <div class="container-fluid content-top-gap">
-
-                        <nav aria-label="breadcrumb" class="mb-4">
-                            <ol class="breadcrumb my-breadcrumb">
-                                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                                <li class="breadcrumb-item active" aria-current="page">Forms</li>
-                            </ol>
-                        </nav>
+                        
+                    <Breadcrumb items={["Home", "Forms"]}/>
 
                         <section class="forms">
                             <div class="card card_border py-2 mb-4">

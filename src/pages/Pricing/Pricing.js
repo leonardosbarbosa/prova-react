@@ -1,5 +1,5 @@
 import React from 'react'
-import './Pricing.css'
+import Breadcrumb from '../../components/Breadcrumb/Breadcrumb'
 
 function Pricing(props) {
 
@@ -11,25 +11,14 @@ function Pricing(props) {
                     {/* <!-- content --> */}
                     <div className="container-fluid content-top-gap">
 
-                        {/* <!-- breadcrumbs --> */}
-                        <nav aria-label="breadcrumb" className="mb-4">
-                            <ol className="breadcrumb my-breadcrumb">
-                                <li className="breadcrumb-item"><a href="index.html">Home</a></li>
-                                <li className="breadcrumb-item active" aria-current="page">Pricing Tables</li>
-                            </ol>
-                        </nav>
-                        {/* <!-- //breadcrumbs -->
+                        <Breadcrumb items={["Home", "Pricing Tables"]}/>
 
-  <!-- pricing --> */}
                         <section className="pricing">
                             <div className="card card_border mb-5">
                                 <div className="cards__heading">
                                     <h3>Pricing Tables -<span> Version 1</span></h3>
                                 </div>
                                 <div className="card-body">
-                                    {/* <!-- pricing version 1 -->
-
-        <!--//BLOCK ROW END--> */}
 
                                     <section className="w3l-pricing1">
                                         <div className="row px-2">

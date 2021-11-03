@@ -1,7 +1,7 @@
 import React from 'react'
+import Breadcrumb from '../../components/Breadcrumb/Breadcrumb'
 import Chart from '../../components/Chart/Chart'
 import StatsCard from '../../components/StatsCard/StatsCard'
-import './Home.css'
 
 function Home(props) {
 
@@ -17,12 +17,8 @@ function Home(props) {
                     {/* <!-- content --> */}
                     <div className="container-fluid content-top-gap">
 
-                        <nav aria-label="breadcrumb">
-                            <ol className="breadcrumb my-breadcrumb">
-                                <li className="breadcrumb-item"><a href="index.html">Home</a></li>
-                                <li className="breadcrumb-item active" aria-current="page">Dashboard</li>
-                            </ol>
-                        </nav>
+                    <Breadcrumb items={["Home", "Dashboard"]}/>
+
                         <div className="welcome-msg pt-3 pb-4">
                             <h1>Hi <span className="text-primary">John</span>, Welcome back</h1>
                             <p>Very detailed & featured admin.</p>

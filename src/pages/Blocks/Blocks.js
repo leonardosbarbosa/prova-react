@@ -1,10 +1,10 @@
 import React from 'react'
-import './Blocks.css'
 
 import Template1Img from '../../assets/images/template1.jpg'
 import Template2Img from '../../assets/images/template2.jpg'
 import BlockFeature from '../../components/BlockFeature/BlockFeature'
 import ContentBlock from '../../components/ContentBlock/ContentBlock'
+import Breadcrumb from '../../components/Breadcrumb/Breadcrumb'
 
 function Blocks(props) {
 
@@ -16,17 +16,8 @@ function Blocks(props) {
                     {/* <!-- content --> */}
                     <div className="container-fluid content-top-gap">
 
-                        {/* <!-- breadcrumbs --> */}
-                        <nav aria-label="breadcrumb" className="mb-4">
-                            <ol className="breadcrumb my-breadcrumb">
-                                <li className="breadcrumb-item"><a href="index.html">Home</a></li>
-                                <li className="breadcrumb-item"><a href="#">Elements</a></li>
-                                <li className="breadcrumb-item active" aria-current="page">Content Blocks</li>
-                            </ol>
-                        </nav>
-                        {/* <!-- //breadcrumbs -->
+                    <Breadcrumb items={["Home", "Elements", "Content Blocks"]}/>
 
-  <!-- card heading --> */}
                         <div className="cards__heading">
                             <h3>Content Blocks</h3>
                         </div>

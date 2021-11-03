@@ -1,5 +1,4 @@
 import React from 'react'
-import './Cards.css'
 import CartImg from '../../assets/images/cart.jpg'
 import Template2Img from '../../assets/images/template2.jpg'
 import DashboardImg from '../../assets/images/dashboard.jpg'
@@ -15,17 +14,9 @@ function Cards(props) {
                 <div className="main-content">
                     {/* <!-- content --> */}
                     <div className="container-fluid content-top-gap">
-                        {/* <!-- breadcrumbs --> */}
+
                         <Breadcrumb items={["Home", "Elements", "Cards"]}/>
-                        {/* <nav aria-label="breadcrumb" className="mb-4">
-                            <ol className="breadcrumb my-breadcrumb">
-                                <li className="breadcrumb-item"><a href="index.html">Home</a></li>
-                                <li className="breadcrumb-item"><a href="#">Elements</a></li>
-                                <li className="breadcrumb-item active" aria-current="page">Cards</li>
-                            </ol>
-                        </nav> */}
-                        {/* <!-- //breadcrumbs -->
-        <!-- cards --> */}
+
                         <section className="template-cards">
                             {/* <!-- Card Columns --> */}
                             <div className="card card_border mb-5">
